@@ -1,6 +1,10 @@
 # Golden reference của clip chính chỉ tồn tại trong repo coach/instructor.
 # Student release được dựng bằng instructor/tools/make_student_release.sh.
+gold/clip_01/
 !gold/.gitkeep
+
+# Ảnh frame nặng — không commit vào repo học viên.
+data/clips/
 
 # Kết quả học viên được phép commit có chủ đích.
 outputs/*
@@ -10,11 +14,13 @@ outputs/*
 !outputs/model_bytetrack_clip_01.txt
 !outputs/model_reid_clip_01.txt
 
-# Artifact tạm và model weights.
+# Artifact tạm, model weights, file nén, visualization nặng.
 outputs/vis_*/
 outputs/tmp_*.txt
 *.pt
 *.zip
+*.mp4
+*.avi
 
 __pycache__/
 *.py[cod]
